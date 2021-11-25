@@ -19,8 +19,6 @@ public class Zipper {
         File fileOut = new File(pathOut);
         try (ZipOutputStream zos = new ZipOutputStream(new FileOutputStream(fileOut))) {
             zip(fileIn, zos, "");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
